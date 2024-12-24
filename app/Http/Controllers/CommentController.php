@@ -10,8 +10,8 @@ class CommentController extends Controller
     public function index()
     {
         $comments = Comment::all();
-        //return view('index', compact('comments'));
-        return $comments;
+        return view('index', compact('comments'));
+
     }
 
     public function store(Request $request)
